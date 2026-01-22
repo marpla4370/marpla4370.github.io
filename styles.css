@@ -37,12 +37,14 @@ nav a {
     padding: 8px 16px;
     transition: all 0.3s ease;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 
 nav a:hover {
     background-color: #3498db;
     color: #ffffff;
+    background-color: #f0f0f0;
 }
 
 
@@ -62,6 +64,7 @@ section {
     
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: transform 0.4s ease-in-out;
 }
 
 section h2 {
@@ -69,7 +72,9 @@ section h2 {
     border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
 }
-
+section:hover {
+  transform: scale(1.02);
+}
 
 footer {
     text-align: center;
@@ -78,4 +83,31 @@ footer {
     margin-top: 50px;
     background-color: #1a252f; 
     color: #bdc3c7; 
+}
+.col-highlight {
+  background-color: #f9f9f9;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+caption {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.2em;
 }
